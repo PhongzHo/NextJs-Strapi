@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import useSWR from 'swr';
+import Container from '@/modules/layouts/container';
 
 const SingleBlog = ({ params }: any) => {
   const id = params.id
@@ -15,8 +16,10 @@ const SingleBlog = ({ params }: any) => {
       <div className='bg-blue-50 font-extrabold'>
         <h1 className='text-green-500 text-center text-5xl'>Single Blog</h1>
       </div>
-      {data.data.attributes.Tittle} <br />
-      {data.data.attributes.MainContent}
+      <Container>
+        {data.data.attributes.Tittle} <br />
+        {data.data.attributes.MainContent}
+      </Container>
     </>
   )
 }

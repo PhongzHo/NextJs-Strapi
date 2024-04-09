@@ -8,6 +8,7 @@ export default function Home() {
       <div className="flex mt-12 justify-center gap-4">
         <Link href={'/blogs'} className="p-4 border-[2px] border-orange-400">Blogs</Link>
         <Link href={'/three'} className="p-4 border-[2px] border-orange-400">Blogs section</Link>
+        <Link href={'/test'} className="p-4 border-[2px] border-orange-400">Test loading</Link>
       </div>
 
     </>

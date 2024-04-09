@@ -13,7 +13,7 @@ function page() {
 
     return (
         <div>
-            {isLoading ? <LoadingComponent /> : <div>Loaded</div>}
+            {!isLoading ? <LoadingComponent /> : <div>Loaded</div>}
         </div>
     )
 }
